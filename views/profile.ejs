@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Profile</title>
+</head>
+<body>
+	<h1>Welcome, <%= userContext.userinfo.name %>!</h1>
+	<p>Your email is <%= userContext.userinfo.email %>.</p>
+	<p>You signed up on <%= new Date(userContext.userinfo.created).toLocaleDateString() %>.</p>
+	<p>Your user ID is <%= userContext.userinfo.sub %>.</p>
+</body>
+</html>
